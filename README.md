@@ -29,7 +29,8 @@
 11. Copy the codes in all old files to new created files (except the words.pkl, classes.pkl, and chatbot_model.h5)
 12. Remove your old projects 
 13. Open a terminal and use cmd.
-14. Run this file first: "python chatapp.py"
-15. If there are no errors, use this command to run: "python chatbot_gui.py"
-16. Just type the following queries based on intent.
+14. Make sure your cmd terminal is in virtual environment(venv), if not, type this code again: "venv\Scripts\activate" in the vscode's cmd terminal
+15. Run this file first: "python chatapp.py"
+16. If there are no errors, use this command to run: "python chatbot_gui.py"
+17. Just type the following queries based on intents.json.
   
