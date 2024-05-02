@@ -1,4 +1,3 @@
-#Creating GUI with tkinter
 import tkinter
 from tkinter import *
 from chatapp import ChatApp as cA
@@ -8,13 +7,27 @@ def send(event=None):
     EntryBox.delete("0.0",END)
     if msg != '':
         ChatLog.config(state=NORMAL)
-        ChatLog.insert(END, "You: " + msg + '\n\n')
-        ChatLog.config(foreground="black", font=("Verdana", 12))
+        
+        # Configure tag for "You" text
+        ChatLog.tag_config("you_tag", foreground="blue", font=("Verdana", 12, "bold"))
+        
+        # Configure tag for "ChatBot" text
+        ChatLog.tag_config("chatbot_tag", foreground="green", font=("Verdana", 12, "bold"))
+        
+        # Insert "You" text with the configured tag
+        ChatLog.insert(END, "You: ", "you_tag")
+        ChatLog.insert(END, msg + '\n\n')
+        
+        # Get response from the chatbot
         res = cA().chatbot_response(msg)
-        ChatLog.insert(END, "ChatBot: " + res + '\n\n')
+        
+        # Insert "ChatBot" text with the configured tag
+        ChatLog.insert(END, "ChatBot: ", "chatbot_tag")
+        ChatLog.insert(END, res + '\n\n')
+        
         ChatLog.config(state=DISABLED)
         ChatLog.yview(END)
-
+        
 base = Tk()
 base.title("Simple ChatBot")
 base.geometry("1000x500")
@@ -25,7 +38,7 @@ ChatLog = Text(base, bd=0, bg="white", height="8", width="50", font="Arial",)
 ChatLog.config(state=DISABLED)
 
 #Bind scrollbar to Chat window
-scrollbar = Scrollbar(base, command=ChatLog.yview, cursor="heart")
+scrollbar = Scrollbar(base, command=ChatLog.yview)
 ChatLog['yscrollcommand'] = scrollbar.set
 
 #Create Button to send message
