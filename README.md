@@ -11,7 +11,7 @@
 4. Type this codeL :"code ." to proceed vscode
 5. Make new following folders and files:
    - For folders:
-     - pickle
+     - pickle 
        - words.pkl
        - classes.pkl
    - For files:
@@ -21,9 +21,10 @@
      - utils.py
      - intents.json
      - chatbot_model.h5
-6. Copy the codes in all old files to new created files
-7. Open a terminal and use cmd.
-8. Run this file first: "python chatapp.py"
-9. If there are no errors, use this command to run: "python chatbot_gui.py"
-10. Just type the following queries based on intent.
+6. Copy the codes in all old files to new created files (except the words.pkl, classes.pkl, and chatbot_model.h5)
+7. Remove your old projects 
+8. Open a terminal and use cmd.
+9. Run this file first: "python chatapp.py"
+10. If there are no errors, use this command to run: "python chatbot_gui.py"
+11. Just type the following queries based on intent.
   
