@@ -13,7 +13,6 @@
       ],
       "responses": [
         "Hello, thank you for asking.",
-        "Good to see you again.",
         "Hi there, how can I help?",
         "Hello! How can I assist you today?"
       ],
@@ -87,7 +86,7 @@
       "context": [""]
     },
     {
-      "tag": "name",
+      "tag": "bot_name",
       "patterns": [
         "What are you?",
         "Who are you?",
@@ -166,6 +165,7 @@
         "Why can't Michael Jackson go within 500 meters of a school? Because he's dead.",
         "Would your rather watch a tree grow or a knee grow?",
         "Your mom's second car crash this week.",
+        "Do you know why God is angry at Cain? It's because Cain DISABELED his brother.",
         "Your life."
       ],
       "context": [""]
