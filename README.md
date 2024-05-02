@@ -11,7 +11,8 @@
    - pip install nltk==3.8.1
    - pip install numpy==1.26.4
 6. Type this codeL :"code ." to proceed vscode
-7. Make new following folders and files:
+7. Clone the repository for references using GitBash: "git clone -b initial-release https://github.com/adet-projects/simple-chatbot.git" 
+8. Make new following folders and files in chatbot folder:
    - For folders:
      - pickle 
        - words.pkl
@@ -23,10 +24,10 @@
      - utils.py
      - intents.json
      - chatbot_model.h5
-8. Copy the codes in all old files to new created files (except the words.pkl, classes.pkl, and chatbot_model.h5)
-9. Remove your old projects 
-10. Open a terminal and use cmd.
-11. Run this file first: "python chatapp.py"
-12. If there are no errors, use this command to run: "python chatbot_gui.py"
-13. Just type the following queries based on intent.
+9. Copy the codes in all old files to new created files (except the words.pkl, classes.pkl, and chatbot_model.h5)
+10. Remove your old projects 
+11. Open a terminal and use cmd.
+12. Run this file first: "python chatapp.py"
+13. If there are no errors, use this command to run: "python chatbot_gui.py"
+14. Just type the following queries based on intent.
   
