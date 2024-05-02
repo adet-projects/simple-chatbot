@@ -1,18 +1,20 @@
 # simple-chatbot
 
 1. Open your cmd
-2. Create and new folder named "chatbot" using this command: "mkdir chatbot" and then use "cd chatbot"
-3. Make a new virtual environment with this code: "python -m venv venv"
+2. Create a new folder named "chatbot" using this command: "mkdir chatbot" and then use "cd chatbot"
+3. Make a new virtual environment with this code: "python -m venv venv" in chatbot folder
 4. Type this code: "venv\Scripts\activate"
-5. Install these following libraries:
+5. Install these following libraries while you in (venv):
    - pip install ChatterBot==1.0.4
    - pip install tensorflow==2.16.1
    - pip install keras==3.3.3
    - pip install nltk==3.8.1
    - pip install numpy==1.26.4
-6. Type this codeL :"code ." to proceed vscode
-7. Clone the repository for references using GitBash: "git clone -b initial-release https://github.com/adet-projects/simple-chatbot.git" 
-8. Make new following folders and files in chatbot folder:
+6. Type this code:"code ." to proceed vscode
+7. Get the chatbot in GitHub or Google Drive for references
+   - In GitHub, clone the repository using this command: "git clone -b initial-release https://github.com/adet-projects/simple-chatbot.git" in GitBash
+   - In Google Drive, download this file: https://drive.google.com/file/d/1wTUzxHog_bVgwx3ZqAxuuN6sNxNQfkIm/view?usp=sharing
+10. Make new following folders and files in chatbot folder:
    - For folders:
      - pickle 
        - words.pkl
@@ -24,10 +26,10 @@
      - utils.py
      - intents.json
      - chatbot_model.h5
-9. Copy the codes in all old files to new created files (except the words.pkl, classes.pkl, and chatbot_model.h5)
-10. Remove your old projects 
-11. Open a terminal and use cmd.
-12. Run this file first: "python chatapp.py"
-13. If there are no errors, use this command to run: "python chatbot_gui.py"
-14. Just type the following queries based on intent.
+11. Copy the codes in all old files to new created files (except the words.pkl, classes.pkl, and chatbot_model.h5)
+12. Remove your old projects 
+13. Open a terminal and use cmd.
+14. Run this file first: "python chatapp.py"
+15. If there are no errors, use this command to run: "python chatbot_gui.py"
+16. Just type the following queries based on intent.
   
